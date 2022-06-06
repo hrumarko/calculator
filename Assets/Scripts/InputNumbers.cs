@@ -19,4 +19,12 @@ public class InputNumbers : MonoBehaviour
         resultText.text = "";
     }
 
+    public void RemoveLastSymbol(){
+        if(textOutput.text.Length > 1){
+        textOutput.text = textOutput.text.Remove(1);
+        } else{
+            RemoveSymbol();
+        }
+    }
+
 }
