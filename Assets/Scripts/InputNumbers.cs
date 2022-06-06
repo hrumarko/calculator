@@ -5,26 +5,27 @@ using UnityEngine.UI;
 
 public class InputNumbers : MonoBehaviour
 {
-    public Text textOutput;
-    public Text resultText;
+    public Text textOutput;        //куда вводить текст
+    public Text resultText;          //результат
     public string buttonText;
-    public string outputData;
+    
 
-    public void ClickOnButton(){
+    public void ClickOnButton(){                            //ввод данных
         textOutput.text += buttonText;
     }
 
-    public void RemoveSymbol(){
+    public void RemoveSymbol(){                        //очистить все
         textOutput.text = "";
         resultText.text = "";
     }
 
-    public void RemoveLastSymbol(){
-        if(textOutput.text.Length > 1){
-        textOutput.text = textOutput.text.Remove(1);
+    public void RemoveLastSymbol(){                                //очистить последний символ
+        if(textOutput.text.Length > 1){                                                 
+            textOutput.text = textOutput.text.Remove(textOutput.text.Length);         
         } else{
             RemoveSymbol();
         }
+         
     }
 
 }

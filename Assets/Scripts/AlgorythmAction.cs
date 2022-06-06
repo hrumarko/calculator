@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class ActionEnum : MonoBehaviour
+public class AlgorythmAction : MonoBehaviour
 {
+
     public double Division(double firstNum, double secondNum){
         return firstNum/secondNum;
     }

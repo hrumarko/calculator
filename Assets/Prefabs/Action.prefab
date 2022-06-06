@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2505866600743116442}
   - component: {fileID: 4570530765034186378}
   - component: {fileID: 5406906687544483017}
-  - component: {fileID: -862207084530790896}
+  - component: {fileID: 8637289568191818980}
   m_Layer: 5
   m_Name: Action
   m_TagString: Untagged
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: -862207084530790896}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Actions, Assembly-CSharp
         m_MethodName: InputAction
         m_Mode: 1
@@ -134,7 +134,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &-862207084530790896
+--- !u!114 &8637289568191818980
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,11 +143,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 6092111991262009017}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dddbdcdbc68348e41b26daa26fab85f3, type: 3}
+  m_Script: {fileID: 11500000, guid: 2b587727c31f07e41befccd422608400, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outputData: {fileID: 0}
-  actionText: 
+  textOutput: {fileID: 0}
+  resultText: {fileID: 0}
+  buttonText: 
 --- !u!1 &7869243219725119257
 GameObject:
   m_ObjectHideFlags: 0
