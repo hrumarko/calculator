@@ -21,7 +21,7 @@ public class InputNumbers : MonoBehaviour
 
     public void RemoveLastSymbol(){                                //очистить последний символ
         if(textOutput.text.Length > 1){                                                 
-            textOutput.text = textOutput.text.Remove(textOutput.text.Length);         
+            textOutput.text = textOutput.text.Remove(textOutput.text.Length-1);         
         } else{
             RemoveSymbol();
         }

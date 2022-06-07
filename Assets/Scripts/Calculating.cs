@@ -38,7 +38,7 @@ public class Calculating : MonoBehaviour
         string leftStr = new string(left.ToArray());               //перевод массива в строку                          
         string rightStr = new string(right.ToArray());
 
-        if(leftStr == "" || leftStr.Contains(",,") || leftStr.StartsWith(",") || rightStr == "" || rightStr.StartsWith(",")||rightStr.Contains(",,")){
+        if(SearchCommas(leftStr) > 1 || leftStr.StartsWith(",") || rightStr == "" || rightStr.StartsWith(",") || SearchCommas(rightStr)>1){
             resultText.text = "Error";
             return;
         }
@@ -72,10 +72,17 @@ public class Calculating : MonoBehaviour
         }
         string str = result.ToString();
         return str;
-
-
     }
+    public int SearchCommas(string num){                 //неправильное использование запятых
+        char[] a = num.ToCharArray();
+        int countCommas = 0;
 
-    
+        for(int i = 0; i < a.Length; i++){
+            if(a[i] == ','){
+                countCommas++;
+            }
+        }
+        return countCommas;
+    }
 
 }

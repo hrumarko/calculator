@@ -1920,8 +1920,17 @@ PrefabInstance:
       propertyPath: m_Text
       value: <<
       objectReference: {fileID: 0}
+    - target: {fileID: 8637289568191818980, guid: b165a848ef961a4488025008b917ba71, type: 3}
+      propertyPath: resultText
+      value: 
+      objectReference: {fileID: 899763651}
+    - target: {fileID: 8637289568191818980, guid: b165a848ef961a4488025008b917ba71, type: 3}
+      propertyPath: textOutput
+      value: 
+      objectReference: {fileID: 1393805604}
     m_RemovedComponents:
     - {fileID: -862207084530790896, guid: b165a848ef961a4488025008b917ba71, type: 3}
+    - {fileID: 8637289568191818980, guid: b165a848ef961a4488025008b917ba71, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b165a848ef961a4488025008b917ba71, type: 3}
 --- !u!224 &1588132738 stripped
 RectTransform:
